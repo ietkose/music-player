@@ -1,47 +1,105 @@
 # CLI Audio Player (Java)
 
-A simple, command-line based audio player built using the Java Sound API (`javax.sound.sampled`). 
-It allows users to play, stop, and reset `.wav` audio files directly from the terminal.
+[![Java](https://img.shields.io/badge/Java-15%2B-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
+[![CLI](https://img.shields.io/badge/CLI-Audio_Player-black.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)](https://en.wikipedia.org/wiki/Command-line_interface)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
-## Features
+**[Visit Project Repository / Proje Deposu](https://github.com/ietkose/music-player)**
 
-* **Playback Controls:**
-  * `P` : Play audio
-  * `S` : Stop/Pause audio
-  * `R` : Reset to the beginning
-  * `Q` : Quit application
-* **Modern Java Syntax:** Utilizes Java Switch Expressions for cleaner code logic.
-* **Error Handling:** Manages unsupported file types and audio stream errors gracefully.
+⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝
 
-## Requirements
+## 🇬🇧 ENGLISH
 
-* **Java 15 or higher** (Required for Switch Expressions).
-* **Audio Format:** Supports `.wav` files (Java Sound API standard).
+A lightweight command-line audio player built using native Java Sound API (`javax.sound.sampled`). It enables real-time playback control for `.wav` audio files directly from the terminal interface.
 
-## Installation & Usage
+---
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/ietkose/music-player.git
-    ```
+### 🎸 Key Features
+* **Interactive Playback Controls**:
+  * `P` : **Play** audio stream
+  * `S` : **Stop / Pause** playback
+  * `R` : **Reset** audio to the beginning
+  * `Q` : **Quit** the application
+* **Modern Java Syntax**: Implements clean switch expressions (Java 15+) for streamlined event handling.
+* **Robust Error Handling**: Gracefully handles missing files, unsupported audio formats, and line exceptions.
 
-2.  **Setup Audio File:**
-    * If you want to add your own sound:
-        * Place your `.wav` file inside the folder named `assets`.
-        * Note: The default code looks for a specific filename. You may need to rename your file or update the path in `App.java`.*
+---
 
-3.  **Compile the Code:**
-    ```bash
-    javac src/App.java -d bin
-    ```
+### 🎸 Tech Stack & Concepts
+* **Language:** Java (v15 or higher)
+* **API:** Java Sound API (`javax.sound.sampled`)
+* **Concepts:** File I/O, Audio Streams, Clip Interface, Exception Handling, Scanner Input Processing
 
-4.  **Run the Player:**
-    ```bash
-    java -cp bin App
-    ```
+---
 
-## 👨‍💻 Tech Stack
+### 🎸 Installation & Usage
 
-* **Language:** Java
-* **Library:** `javax.sound.sampled`
-* **Concepts:** File I/O, Exception Handling, Streams.
+#### Prerequisites
+* **Java Development Kit (JDK 15+)** installed and configured.
+
+#### 1. Clone the Repository
+```bash
+git clone [https://github.com/ietkose/music-player.git](https://github.com/ietkose/music-player.git)
+cd music-player
+```
+
+#### 2. Setup Audio File
+Place your .wav file inside the assets/ directory (or update the audio path in App.java).
+
+#### 3. Compile the Application
+```bash
+javac src/App.java -d bin
+```
+
+#### 4. Run the Player
+```bash
+java -cp bin App
+```
+
+### 🎸 License
+This project is licensed under the MIT License.
+
+⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝⸝
+
+## 🇹🇷 TÜRKÇE
+Java Sound API (javax.sound.sampled) kullanılarak geliştirilmiş, terminal üzerinden çalışan hafif bir komut satırı ses çalar uygulaması. .wav uzantılı ses dosyalarını komut satırından anlık olarak kontrol etmenizi sağlar.
+
+### 🎸 Öne Çıkan Özellikler
+* **Etkileşimli Oynatma Kontrolleri:**
+  * `P` : Sesi Oynat
+  * `S` : Sesi Durdur / Duraklat
+  * `R` : Sesi başa Sıfırla
+  * `Q` : Uygulamadan Çık
+* **Modern Java Sözdizimi:** Java 15+ ile gelen switch ifadeleri ile temiz ve okunabilir kod yapısı.
+* **Hata Yakalama Mekanizması:** Eksik dosya, desteklenmeyen ses formatı ve akış hatalarına karşı güvenli hata yönetimi.
+
+### 🎸 Kullanılan Teknolojiler ve Kavramlar
+* **Dil:** Java (v15 veya üzeri)
+* **Kütüphane / API:** Java Sound API (javax.sound.sampled)
+* **Kavramlar:** Dosya G/Ç (File I/O), Ses Akışları (Audio Streams), İstisna Yönetimi (Exception Handling)
+
+### 🎸 Kurulum ve Çalıştırma
+**Gereksinimler**
+* Sisteminizde JDK 15 veya üzeri sürümün yüklü olması gerekir.
+
+#### 1. Depoyu Klonlayın
+```bash
+git clone [https://github.com/ietkose/music-player.git](https://github.com/ietkose/music-player.git)
+cd music-player
+```
+
+#### 2. Ses Dosyası Ekleme
+Kendi .wav uzantılı ses dosyanızı assets/ klasörüne ekleyin (veya App.java içerisindeki dosya yolunu güncelleyin).
+
+#### 3. Kodu Derleyin
+```bash
+javac src/App.java -d bin
+```
+
+#### 4. Uygulamayı Başlatın
+```bash
+java -cp bin App
+```
+
+### 🎸 Lisans
+Bu proje MIT lisansı altında lisanslanmıştır.
