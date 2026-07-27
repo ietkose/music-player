@@ -48,7 +48,7 @@ Place your .wav file inside the assets/ directory (or update the audio path in A
 
 #### 3. Compile the Application
 ```bash
-javac src/App.java -d bin
+javac App.java -d bin
 ```
 
 #### 4. Run the Player
@@ -93,7 +93,7 @@ Kendi .wav uzantılı ses dosyanızı assets/ klasörüne ekleyin (veya App.java
 
 #### 3. Kodu Derleyin
 ```bash
-javac src/App.java -d bin
+javac App.java -d bin
 ```
 
 #### 4. Uygulamayı Başlatın
